@@ -3,7 +3,9 @@ import { useTaskStore } from './stores/TaskStore.js';
 
 import TaskDetails from './components/TaskDetails.vue';
 
-import TaskForm from './components/TaskForm.vue';
+// import TaskForm from './components/TaskForm.vue';
+
+import TaskFormNew from './components/TaskFormNew.vue'
 
 import { ref } from 'vue';
 
@@ -24,7 +26,8 @@ const filter = ref('all');
 
 
     <div class="new-task-from">
-      <TaskForm />
+      <!-- <TaskForm /> -->
+      <TaskFormNew />
     </div>
 
 
