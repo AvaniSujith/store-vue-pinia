@@ -85,6 +85,7 @@ header h1 {
 .new-task-form{
   background: #e7e7e7;
   padding: 20px 0;
+  /* margin: 10px; */
 }
 
 form{
@@ -98,4 +99,21 @@ form{
 form button{
   background: #ffd859;
   border: 0;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+form input{
+  border: 0;
+  color: #555;
+  font-size: 1em;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.task i.active{
+  color: #ff005d;
 }
