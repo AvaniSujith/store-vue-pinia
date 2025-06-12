@@ -11,6 +11,8 @@ import { ref } from 'vue';
 
 const taskStore = useTaskStore();
 
+taskStore.getTask();
+
 const filter = ref('all');
 
 </script>
@@ -36,6 +38,11 @@ const filter = ref('all');
       <button @click="filter = 'favs'">Fav Tasks</button>
     </nav>
 
+
+    <div class="loading" v-if="taskStore.loading">
+      Loading task...
+    </div>
+
      <!-- task list -->
       <div class="task-list" v-if="filter === 'all'">
         <!-- <p>All Tasks</p> -->
@@ -55,4 +62,3 @@ const filter = ref('all');
   </main>
 
 </template>
-
